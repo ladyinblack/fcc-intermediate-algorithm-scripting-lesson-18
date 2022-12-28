@@ -18,8 +18,6 @@ appDiv.innerHTML = `<h1>Everything Be True</h1>`;
 function truthCheck(collection, pre) {
   let counter = 0;
   for (let i = 0; i < collection.length; i++) {
-    let keys = Object.keys(collection[i]);
-    let values = Object.values(collection[i]);
     if (collection[i].hasOwnProperty(pre) && Boolean(collection[i][pre])) {
       counter++;
     }
